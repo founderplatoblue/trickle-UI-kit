@@ -317,9 +317,9 @@
       },
       "css": {
         "@keyframes trickle-shimmer": {
-          "/* With bg-size 200%, the image is twice the element width.\n     Pan from 0% (highlight on right edge) \u2192 -100% (highlight on left edge),\n     then hold offscreen-left briefly so the loop wrap is invisible. */\n  0%": { "background-position": "0% 0" },
-          "60%": { "background-position": "-100% 0" },
-          "100%": { "background-position": "-100% 0" }
+          "/* With bg-size 200%, the image is twice the element width.\n     Pan from 0% (highlight on right edge) \u2192 100% (highlight on left edge;\n     a positive percentage shifts an oversized image left, a negative one\n     would slide it off the text and leave the glyphs transparent),\n     then hold offscreen-left briefly so the loop wrap is invisible. */\n  0%": { "background-position": "0% 0" },
+          "60%": { "background-position": "100% 0" },
+          "100%": { "background-position": "100% 0" }
         },
         "@media (prefers-reduced-motion: reduce)": {
           ".animate-trickle-shimmer": { "animation": "none" }

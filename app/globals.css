@@ -343,11 +343,13 @@
 
 @keyframes trickle-shimmer {
   /* With bg-size 200%, the image is twice the element width.
-     Pan from 0% (highlight on right edge) → -100% (highlight on left edge),
+     Pan from 0% (highlight on right edge) → 100% (highlight on left edge;
+     a positive percentage shifts an oversized image left, a negative one
+     would slide it off the text and leave the glyphs transparent),
      then hold offscreen-left briefly so the loop wrap is invisible. */
   0%   { background-position: 0% 0; }
-  60%  { background-position: -100% 0; }
-  100% { background-position: -100% 0; }
+  60%  { background-position: 100% 0; }
+  100% { background-position: 100% 0; }
 }
 
 @keyframes trickle-aurora {
