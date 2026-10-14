@@ -25,6 +25,12 @@ export function SiteHeader() {
             Install
           </Link>
           <Link
+            href='/example'
+            className='hidden transition-colors hover:text-foreground sm:inline'
+          >
+            Example
+          </Link>
+          <Link
             href='https://github.com/akaieuan/trickle-UI-kit'
             className='transition-colors hover:text-foreground'
             target='_blank'
